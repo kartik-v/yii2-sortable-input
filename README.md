@@ -39,6 +39,8 @@ to the ```require``` section of your `composer.json` file.
 ```php
 use kartik\sortinput\SortableInput;
 echo SortableInput::widget([
+    'model' => $model,
+    'attribute' => 'sort_list',
     'items' => [
         ['id'=>1, 'content' => 'Item # 1'],
         ['id'=>2, 'content' => 'Item # 2'],
