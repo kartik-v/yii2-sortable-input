@@ -1,7 +1,7 @@
 yii2-sortable-input
 ===================
 
-An input widget for Yii 2.0 widget based on yii2-sortable extension that allows you to create sortable-input lists and grids and manipulate them 
+An input widget for Yii 2.0 widget based on [yii2-sortable](http://demos.krajee.com/sortable) extension that allows you to create sortable-input lists and grids and manipulate them 
 using simple drag and drop. 
 
 > NOTE: This extension depends on the [kartik-v/yii2-widgets](https://github.com/kartik-v/yii2-sortable) extension which in turn depends on the 
