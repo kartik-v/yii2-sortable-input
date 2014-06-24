@@ -10,24 +10,20 @@
  * For more Yii related demos visit http://demos.krajee.com
  */
 (function ($) {
-    var isEmpty = function (value, trim) {
-        return value === null || value === undefined || value == []
-            || value === '' || trim && $.trim(value) === '';
-    };
-
     var SortableInput = function (element, options) {
         this.$element = $(element);
-        this.$sortableEl = $('#' + options.sortableId);
-        this.init();
+        this.options = options;
+        this.init(options);
         this.listen();
     };
 
     SortableInput.prototype = {
         constructor: SortableInput,
-        init: function () {
-            var self = this, $form = self.$form;
-            self.$form = self.$element.closest('form');
+        init: function (options) {
+            var self = this, $form;
+            self.$sortableEl = $('#' + options.sortableId);
             self.delimiter = options.delimiter;
+            self.$form = self.$element.closest('form');
             self.initialValue = self.getKeys();
             self.initialContent = self.$sortableEl.html();
             self.$element.val(self.initialValue);
@@ -39,8 +35,11 @@
                 self.$element.trigger('change');
             });
             self.$form.on('reset', function () {
-                self.$sortableEl.html(self.initialContent);
-                self.$element.val(self.initialValue);
+                setTimeout(function () {
+                    self.$sortableEl.html(self.initialContent);
+                    self.$sortableEl.sortable(self.options);
+                    self.$element.val(self.initialValue);
+                }, 300);
             });
         },
         getKeys: function () {
@@ -71,8 +70,5 @@
         });
     };
 
-    $.fn.sortableInput.defaults = {
-        sortableId: '',
-        delimiter: ','
-    };
+    $.fn.sortableInput.defaults = {sortableId: '', delimiter: ','};
 }(jQuery));

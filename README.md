@@ -41,13 +41,15 @@ use kartik\sortinput\SortableInput;
 echo SortableInput::widget([
     'model' => $model,
     'attribute' => 'sort_list',
+    'hideInput' => false,
+    'delimiter' => '~',
     'items' => [
         ['id'=>1, 'content' => 'Item # 1'],
         ['id'=>2, 'content' => 'Item # 2'],
         ['id'=>3, 'content' => 'Item # 3'],
         ['id'=>4, 'content' => 'Item # 4', 'disabled'=>true],
     ]   
-]); 
+]); ?> 
 ```
 
 ## License
