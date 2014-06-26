@@ -45,10 +45,10 @@ echo SortableInput::widget([
     'hideInput' => false,
     'delimiter' => '~',
     'items' => [
-        ['id'=>1, 'content' => 'Item # 1'],
-        ['id'=>2, 'content' => 'Item # 2'],
-        ['id'=>3, 'content' => 'Item # 3'],
-        ['id'=>4, 'content' => 'Item # 4', 'disabled'=>true],
+        1 => ['content' => 'Item # 1'],
+        2 => ['content' => 'Item # 2'],
+        3 => ['content' => 'Item # 3'],
+        4 => ['content' => 'Item # 4', 'disabled'=>true],
     ]   
 ]); ?> 
 ```
