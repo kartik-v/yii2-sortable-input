@@ -1,7 +1,7 @@
 yii2-sortable-input
 ===================
 
-An input widget for Yii 2.0 widget based on [yii2-sortable](http://demos.krajee.com/sortable) extension that allows you to create sortable-input lists and grids and manipulate them 
+An input widget for Yii 2.0 widget based on the [yii2-sortable](http://demos.krajee.com/sortable) extension that allows you to create sortable-input lists and grids and manipulate them 
 using simple drag and drop. It extends the yii2-sortable features by allowing you to store the sort order in a form input (which is hidden by default). The widget stores the order as
 delimited list item keys. The widget includes additional jQuery enhancements to initialize the list, trap sortable order change, and reset order on form reset. 
 
@@ -50,7 +50,7 @@ echo SortableInput::widget([
         3 => ['content' => 'Item # 3'],
         4 => ['content' => 'Item # 4', 'disabled'=>true],
     ]   
-]); ?> 
+]);
 ```
 
 ## License
