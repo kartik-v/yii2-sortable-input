@@ -33,7 +33,7 @@ class SortableInput extends \kartik\widgets\InputWidget
 
     /**
      * @var array the sortable data list. You must set it up as `$key => $value` format, where
-     * - key: int/string, the unique identifier (key) for the item, which will be internally stored. This is mandatory.
+     * - key: int/string, the unique identifier (key) for the item, which will be internally stored.
      * - value: array, is the configuration for the items array in sortable widget and can consist of the following properties:
      *   - content: string, the content to display for the item (this is not HTML encoded). If this is not set,
      *     it will default the `key` setting.
