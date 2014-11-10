@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-sortable-input
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 namespace kartik\sortinput;
@@ -18,7 +18,7 @@ use kartik\sortable\Sortable;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class SortableInput extends \kartik\widgets\InputWidget
+class SortableInput extends \kartik\base\InputWidget
 {
     /**
      * @var array the widget options for `kartik\sortable\Sortable` widget.

@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-sortable-input
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 namespace kartik\sortinput;
@@ -14,7 +14,7 @@ namespace kartik\sortinput;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class SortableInputAsset extends \kartik\widgets\AssetBundle
+class SortableInputAsset extends \kartik\base\AssetBundle
 {
 
     public function init()
