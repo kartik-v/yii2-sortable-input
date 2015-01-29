@@ -1,3 +1,9 @@
+version 1.2.0
+=============
+**Date:** 29-Jan-2015
+
+- (enh #1): Plugin enhancement to update parent keys for connected sortables.
+
 version 1.1.0
 =============
 **Date:** 10-Nov-2014

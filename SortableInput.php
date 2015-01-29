@@ -3,7 +3,7 @@
 /**
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-sortable-input
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 namespace kartik\sortinput;
@@ -60,7 +60,9 @@ class SortableInput extends \kartik\base\InputWidget
     {
         parent::init();
         $this->initItems();
-        $this->sortableOptions['options']['id'] = $this->options['id'] . '-sortable';
+        $id = $this->options['id'] . '-sortable';
+        $this->sortableOptions['options']['id'] = $id;
+        $this->options['data-sortable'] = $id;
         $this->registerAssets();
         $input = $this->hideInput ? 'hiddenInput' : 'textInput';
         echo Sortable::widget($this->sortableOptions) . PHP_EOL . $this->getInput($input);
