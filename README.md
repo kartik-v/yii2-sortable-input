@@ -1,6 +1,12 @@
 yii2-sortable-input
 ===================
 
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-sortable-input/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-sortable-input)
+[![License](https://poser.pugx.org/kartik-v/yii2-sortable-input/license.svg)](https://packagist.org/packages/kartik-v/yii2-sortable-input)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-sortable-input/downloads.svg)](https://packagist.org/packages/kartik-v/yii2-sortable-input)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-sortable-input/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-sortable-input)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-sortable-input/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-sortable-input)
+
 An input widget for Yii 2.0 widget based on the [yii2-sortable](http://demos.krajee.com/sortable) extension that allows you to create sortable-input lists and grids and manipulate them 
 using simple drag and drop. It extends the yii2-sortable features by allowing you to store the sort order in a form input (which is hidden by default). The widget stores the order as
 delimited list item keys. The widget includes additional jQuery enhancements to initialize the list, trap sortable order change, and reset order on form reset. 
