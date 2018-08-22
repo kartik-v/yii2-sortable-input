@@ -30,19 +30,20 @@
         },
         listen: function () {
             var self = this;
-            self.$sortable.on('sortupdate', function (e, ui) {
-                var $parent = ui.startparent, parentId = $parent.attr('id');
-                if (parentId != self.$sortable.attr('id')) {
+            self.$sortable.on('sortupdate', function (e) {
+                var $parent = $(e.detail.origin.container);
+                if (!$parent.length) {
+                    return;
+                }
+                if ($parent.attr('id') != self.$sortable.attr('id')) {
                     var $parentEl = $("input[data-sortable='" + $parent.attr('id') + "']");
                     $parentEl.val(self.getKeys($parent));
                 }
-                self.$element.val(self.getKeys());
-                self.$element.trigger('change');
+                self.$element.val(self.getKeys()).trigger('change');
             });
             self.$form.on('reset', function () {
                 setTimeout(function () {
-                    self.$sortable.html(self.initialContent);
-                    self.$sortable.sortable(self.options);
+                    self.$sortable.html(self.initialContent).sortable(self.options);
                     self.$element.val(self.initialValue);
                 }, 300);
             });
