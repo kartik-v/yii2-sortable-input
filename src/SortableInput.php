@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-sortable-input
- * @version 1.2.0
+ * @version 1.2.1
  */
 
 namespace kartik\sortinput;
@@ -54,7 +54,7 @@ class SortableInput extends \kartik\base\InputWidget
     public $options = ['class' => 'form-control'];
 
     /**
-     * Initializes the widget
+     * @inheritdoc
      */
     public function init()
     {
