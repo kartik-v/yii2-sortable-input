@@ -1,9 +1,9 @@
 Change Log: `yii2-sortable-input`
 =================================
 
-## Version 1.2.1 (_under development_)
+## Version 1.2.1
 
-**Date:** _work in progress_
+**Date:** 29-Aug-2018
 
 - (bug #12): Correct sortable input plugin for the latest `html5sortable` release.
 - Add github contribution and PR/issue log templates.
