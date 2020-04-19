@@ -37,7 +37,7 @@
                 }
                 if ($parent.attr('id') != self.$sortable.attr('id')) {
                     var $parentEl = $("input[data-sortable='" + $parent.attr('id') + "']");
-                    $parentEl.val(self.getKeys($parent));
+                    $parentEl.val(self.getKeys($parent)).trigger('change');
                 }
                 self.$element.val(self.getKeys()).trigger('change');
             });
